@@ -1,3 +1,13 @@
+$(document).ready(function () {
+  hsize = $(window).height();
+  $(".scroll-box").css("height", hsize + "px");
+});
+$(window).resize(function () {
+  hsize = $(window).height();
+  $(".scroll-box").css("height", hsize + "px");
+});
+
+
 $(function () {
   $('div.disappear').each(function () {
     var $win = $(window),
@@ -8,7 +18,7 @@ $(function () {
         scroll;
     $win.on('load scroll', function () {
       scroll = $win.scrollTop();
-      current = (position- scroll) / 700 + 1;
+      current = (position- scroll) / ($(".scroll-box").height() * 0.5) + 1;
       console.log(scroll);
       if (current > 0.999) {
         current = 1;
