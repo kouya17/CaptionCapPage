@@ -19,7 +19,6 @@ $(function () {
     $win.on('load scroll', function () {
       scroll = $win.scrollTop();
       current = (position- scroll) / ($(".scroll-box").height() * 0.5) + 1;
-      console.log(scroll);
       if (current > 0.999) {
         current = 1;
       }
