@@ -33,67 +33,78 @@
 <body>
   <article>
     <div class="scroll-box bg-gray-100">
-      <div class="disappear container mx-auto">
-        <h1 class="text-9xl font-bold py-20">Caption Cap</h1>
-        <p class="text-5xl my-10">字幕を表示する帽子。</p>
+      <div class="disappear container px-4 mx-auto">
+        <h1 class="text-5xl md:text-9xl font-bold py-10 md:py-20">Caption Cap</h1>
+        <p class="text-3xl md:text-5xl py-5 md:py-10">字幕を表示する帽子。</p>
       </div>
     </div>
 
     <div class="bg-gray-100">
-      <div class="container mx-auto">
+      <div class="container px-4 mx-auto">
         <img class="w-4/5 mx-auto" src="./cap2.png" alt="caption cap">
       </div>
     </div>
 
-    <div class="max-w-3xl mx-auto my-36">
-      <p class="text-3xl font-bold text-center">
-        CaptionCapは、あなたの視界の片隅に字幕を表示します。<br>
-        音声データと字幕データを用意すれば、<br>音声再生位置に同期して字幕を表示します。<br>
-        視聴中、あなたの両手はフリー。あなたの作業の邪魔をしません。
-      </p>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 my-36">
-      <div class="md:ml-auto md:my-auto">
-        <h2 class="mx-auto text-3xl font-bold my-5 max-w-sm">音声・字幕データを準備しよう。</h2>
-
-        <div class="mx-auto max-w-3xl my-3 max-w-sm">
-          <p class="text-xl">
-            音声データはMP3、字幕データはWebVTT形式に対応しています。
-            字幕データの生成には<a class="text-blue-600 underline"
-              href="https://github.com/openai/whisper">whisper</a>を利用するのが便利です。
-          </p>
+    <div class="container px-4 mx-auto">
+      <div class="max-w-3xl mx-auto my-28 md:my-36">
+        <div class="text-xl md:text-3xl font-bold md:text-center">
+          <div class="mb-2 md:my-0">
+            CaptionCapは、あなたの視界の片隅に字幕を表示します。
+          </div>
+          <div class="my-0">
+            音声データと字幕データを用意すれば、
+          </div>
+          <div class="mb-2 md:my-0">
+            音声再生位置に同期して字幕を表示します。
+          </div>
+          <div class="my-0">
+            視聴中、あなたの両手はフリー。あなたの作業の邪魔をしません。
+          </div>
         </div>
       </div>
-      <img class="md:mr-auto md:ml-0 mx-auto" src="./1.png" width="400">
-    </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 my-36">
-      <img class="md:ml-auto md:mr-0 mx-auto" src="./2.png" width="400">
-      <div class="md:mr-auto md:my-auto">
-        <h2 class="mx-auto text-3xl font-bold my-5 max-w-sm">データをセット。</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 md:gap-10 my-20 md:my-36">
+        <div class="md:ml-auto md:my-auto">
+          <h2 class="mx-auto text-xl md:text-3xl font-bold my-5 max-w-sm">音声・字幕データを準備しよう。</h2>
 
-        <div class="max-w-3xl mx-auto my-3 max-w-sm">
-          <p class="text-xl">
-            CaptionCapはmicroSDカードからのデータの読み取りに対応しています。
-            音声データと字幕データを同じフォルダに格納することで、CaptionCapから読み取ることができます。
-          </p>
+          <div class="mx-auto max-w-3xl my-3 max-w-sm">
+            <p class="text-md md:text-xl">
+              音声データはMP3、字幕データはWebVTT形式に対応しています。
+              字幕データの生成には<a class="text-blue-600 underline"
+                href="https://github.com/openai/whisper">whisper</a>を利用するのが便利です。
+            </p>
+          </div>
+        </div>
+        <img class="md:mr-auto md:ml-0 mx-auto" src="./1.png" width="400">
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 md:gap-10 my-20 md:my-36">
+        <img class="md:ml-auto md:mr-0 mx-auto" src="./2.png" width="400">
+        <div class="md:mr-auto md:my-auto">
+          <h2 class="mx-auto text-xl md:text-3xl font-bold my-5 max-w-sm">データをセット。</h2>
+
+          <div class="max-w-3xl mx-auto my-3 max-w-sm">
+            <p class="text-md md:text-xl">
+              CaptionCapはmicroSDカードからのデータの読み取りに対応しています。
+              音声データと字幕データを同じフォルダに格納することで、CaptionCapから読み取ることができます。
+            </p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 my-36">
-      <div class="md:ml-auto md:my-auto">
-        <h2 class="mx-auto text-3xl font-bold my-5 max-w-sm">使い方はあなた次第。</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 md:gap-10 my-20 md:my-36">
+        <div class="md:ml-auto md:my-auto">
+          <h2 class="mx-auto text-xl md:text-3xl font-bold my-5 max-w-sm">使い方はあなた次第。</h2>
 
-        <div class="mx-auto max-w-3xl my-3 max-w-sm">
-          <p class="text-xl">
-            メニュー画面にはmicroSDカードに格納されているデータ一覧が表示されます。
-            付属のボタンで操作して、再生したいデータを選択しましょう。
-          </p>
+          <div class="mx-auto max-w-3xl my-3 max-w-sm">
+            <p class="text-md md:text-xl">
+              メニュー画面にはmicroSDカードに格納されているデータ一覧が表示されます。
+              付属のボタンで操作して、再生したいデータを選択しましょう。
+            </p>
+          </div>
         </div>
+        <img class="md:mr-auto md:ml-0 mx-auto" src="./3.jpg" width="400">
       </div>
-      <img class="md:mr-auto md:ml-0 mx-auto" src="./3.jpg" width="400">
     </div>
   </article>
 
